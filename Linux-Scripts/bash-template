@@ -1,0 +1,46 @@
+#! /bin/bash
+
+#===================================================================================
+#
+# FILE:
+#
+# USAGE: ./ <Parameter 1>
+#
+# DESCRIPTION:  Template for scripts
+#
+# OPTIONS: ---
+# REQUIREMENTS: ---
+# BUGS:
+# NOTES:
+# AUTHOR:
+# COMPANY: 
+# VERSION:
+# CREATED:
+# REVISION:
+#===================================================================================
+
+#============================ VARIABLES ==============================================
+
+#var=`./$1` -- example of variable set to parameter 1 of interactive script command
+
+#============================ FUNCTIONS ==============================================
+
+#=== FUNCTION ================================================================
+# NAME: Fct1
+# DESCRIPTION: 
+#=============================================================================
+
+Fct1 () {
+#put contents of function here.  Copy Fct1 from F to } to make multiple function (e.g. function2)
+}
+
+#========================== SCRIPT  ==========================================
+
+if [ $# -lt 1 ] # Tests if parameter was used.  Comment out if script does not use parameters!!!
+    then
+    printf "Usage: %s <USAGE MESSAGE> \n" "$(basename "$0")" >&2
+    exit 64 else
+    echo "Starting Script"
+fi
+
+exit
