@@ -12,7 +12,7 @@
 # REQUIREMENTS: ---
 # BUGS:
 # NOTES:
-# AUTHOR:
+# AUTHOR:  Blake Kilraine
 # COMPANY: 
 # VERSION:
 # CREATED:
@@ -36,10 +36,11 @@ Fct1 () {
 
 #========================== SCRIPT  ==========================================
 
-if [ $# -lt 1 ] # Tests if parameter was used.  Comment out if script does not use parameters!!!
+if [[ $# -lt 1 ]] # Tests if parameter was used.  Comment out if script does not use parameters!!!
     then
     printf "Usage: %s <USAGE MESSAGE> \n" "$(basename "$0")" >&2
-    exit 64 else
+    exit 64 
+    else
     echo "Starting Script"
 fi
 
