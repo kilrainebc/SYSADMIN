@@ -4,7 +4,7 @@
 #
 # FILE: systems.sh
 #
-# USAGE: ./systems.sh <Parameter 1>
+# USAGE: ./systems.sh <List file from directory above>
 #
 # DESCRIPTION: Simple script which pulls information from servers.
 #
@@ -21,7 +21,7 @@
 
 #============================ VARIABLES ==============================================
 
-list=`ls ./$1` #Sets $list variable to parameter 1; should be a list of hostnames.
+list=`ls ../$1` #Sets $list variable to parameter 1; should be a list of hostnames.
 
 #============================ FUNCTIONS ==============================================
 
